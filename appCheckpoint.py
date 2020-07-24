@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jul 22 15:52:30 2020
-
-@author: scriba
+DASH application
+@author: elo
 """
 
 import dash
@@ -11,7 +11,7 @@ import dash_html_components as html
 
 import checkpoint as cp
 
-
+# import of datasets
 resVentes = cp.init()
 resTracks = cp.df_resTracks()
 
