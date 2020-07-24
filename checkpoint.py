@@ -2,16 +2,8 @@
 """
 Created on Wed Jul 22 09:16:52 2020
 
-@author: scriba
-This first dataset is an example database of a music album sales company. 
-You'll find below a sample script to connect to the database, and the schema of the database. 
-Here are some examples of questions you could answer :
+Database is an example of a music album sales company. 
 
-•Mapping of sales by country, and comparison with customer and employee addresses
-•Preferred music format and genre
-•Most represented artists
-•Prediction of top-selling music and determination of the criteria associated with them
-Of course, you can propose other analysis
 """
 
 import pandas as pd
@@ -23,7 +15,7 @@ import plotly.express as px
 import plotly.figure_factory as ff
 
 
-link = 'https://github.com/murpi/wilddata/raw/master/quests/chinook.db'
+link = "https://github.com/EloloeA/chinookDB_dashboard/blob/master/chinook.db?raw=true"
 r = requests.get(link)
 open('chinook.db', 'wb').write(r.content)
 
@@ -31,23 +23,6 @@ open('chinook.db', 'wb').write(r.content)
 conn = sqlite3.connect('chinook.db')
 cursor = conn.cursor()
 cursor.execute('select * from invoice_items').fetchall()
-# pd.read_sql("select * from invoices", conn).info()
-
-# Here is the schema of the database
-# pd.read_sql("SELECT * FROM sqlite_master where type = 'table'", conn)
-
-#infos de chaque table : 
-# pd.read_sql("select * from sqlite_sequence", conn)
-# pd.read_sql("select * from sqlite_stat1", conn)
-
-# pd.read_sql("select * from invoices", conn).info()
-# pd.read_sql("select * from invoice_items", conn).info()
-
-# pd.read_sql("select * from customers", conn).info()
-# pd.read_sql("select * from customers", conn)['Country'].value_counts()
-
-# pd.read_sql("select * from employees", conn)[['LastName','Title']]
-
 
 
 
@@ -261,7 +236,6 @@ def genreClient():
         yaxis_title_text='Number of customer')
     fig.update_traces(marker_color='grey')
     return fig
-# axer la com sur ces genres de musique ! + campagne marketing
 
 resVentes = init()
 resTracks = df_resTracks()
