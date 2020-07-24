@@ -1,0 +1,32 @@
+#main
+{
+    font-family : Tahoma;
+}
+
+
+H1
+{
+    color : #C22C32;
+    text-align : center;
+}
+
+H2
+{
+    text-align : center;
+}
+
+
+
+p
+{
+    font-size : 2em;
+    background-color : greenyellow;
+    margin : auto;
+}
+
+div
+{
+
+    margin : auto;
+}
+
