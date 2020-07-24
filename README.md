@@ -1,11 +1,10 @@
 # chinookDB_dashboard
 Dashboard of the chinook database (The Chinook data model represents a digital media store, including tables for artists, albums, media tracks, invoices and customers).
 
-__Final project of my 5 month data analyst training course at Wild Code School (24/07/20).__
-
+__Project realized at the end of my 5 months data analyst training course (Wild Code School (24/07/20)).__
 *I worked on this project during 2 days.*
 
-**Dash** is a powerful tool to create dashboard application ![Dash Plotly](https://dash.plotly.com/). 
+**Dash** is a powerful tool to create dashboard application. See more on ![Dash Plotly](https://dash.plotly.com/). 
 It is a Python framework for building web applications.
 
 
